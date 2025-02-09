@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import './globals.css';
-import studio from './studio.jpg';
+import studio from './studio.webp';
 const interSans = Inter({
 	variable: '--font-inter-sans',
 	subsets: ['latin']

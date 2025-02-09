@@ -8,7 +8,7 @@ import {
 	ImPhone,
 	ImWhatsapp
 } from 'react-icons/im';
-import logo from "./logo.png";
+import logo from "./logo.webp";
 type TLink = {
 	label: string;
 	href: string;
