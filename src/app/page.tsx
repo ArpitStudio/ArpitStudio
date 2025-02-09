@@ -17,7 +17,7 @@ type TLink = {
 const links: Array<TLink> = [
 	{
 		label: 'WhatsApp: +977 9741759589',
-		href: 'whatsapp://+9779741759589',
+		href: 'https://wa.me/9779741759589',
 		icon: <ImWhatsapp />
 	},
 	{
