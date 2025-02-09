@@ -37,7 +37,7 @@ const links: Array<TLink> = [
 	},
 	{
 		label: 'Our Location',
-		href: 'https://maps.app.goo.gl/4fPjxR53fyX7L5iC9',
+		href: 'https://www.google.com/maps/place/?q=place_id:ChIJl0efBr-R5TkRfx8LE_a6E6s',
 		icon: <ImLocation />
 	},
 	{
