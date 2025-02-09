@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      transitionTimingFunction: {
+        'bounce-in-out': 'cubic-bezier(0, 0.2, 0.5, 3)',
+       }
     },
   },
   plugins: [],
