@@ -69,6 +69,8 @@ export default function Home() {
 				<div>
 					<Image
 						src={logo}
+						placeholder="blur"
+						loading='lazy'
 						alt="logo"
 						width={120}
 						height={120}

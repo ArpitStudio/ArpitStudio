@@ -1,7 +1,9 @@
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Image from 'next/image';
 import './globals.css';
+import studio from './studio.jpg';
 const interSans = Inter({
 	variable: '--font-inter-sans',
 	subsets: ['latin']
@@ -24,10 +26,17 @@ export default function RootLayout({
 					<div
 						className={cn(
 							'relative size-full',
-							"scale-105 before:fixed before:top-0 before:size-full before:bg-[url('/studio.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[100] before:blur-sm before:content-['']",
 							"after:fixed after:top-0 after:size-full after:bg-[url('/bg.svg')] after:bg-repeat after:opacity-[.04] after:bg-blend-overlay after:content-['']"
 						)}
-					></div>
+					>
+						<Image
+							src={studio}
+							alt="body-bg"
+							placeholder="blur"
+							loading="lazy"
+							className="fixed top-0 size-full scale-105 object-cover object-center opacity-[100] blur-sm"
+						/>
+					</div>
 				</div>
 				<div className="flex h-full w-full flex-1 flex-col justify-between px-4 pb-8 pt-16 sm:pb-16">
 					{children}
