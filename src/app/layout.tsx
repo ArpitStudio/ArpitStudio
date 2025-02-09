@@ -2,7 +2,6 @@ import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-
 const interSans = Inter({
 	variable: '--font-inter-sans',
 	subsets: ['latin']
@@ -21,11 +20,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${interSans.variable} antialiased`}>
-				<div className="fixed inset-0 -z-[1] bg-white overflow-hidden">
+				<div className="fixed inset-0 -z-[1] overflow-hidden bg-white">
 					<div
 						className={cn(
 							'relative size-full',
-							"before:fixed before:top-0 before:size-full before:bg-[url('/studio.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[100] before:blur-sm before:content-[''] scale-105",
+							"scale-105 before:fixed before:top-0 before:size-full before:bg-[url('/studio.jpg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-[100] before:blur-sm before:content-['']",
 							"after:fixed after:top-0 after:size-full after:bg-[url('/bg.svg')] after:bg-repeat after:opacity-[.04] after:bg-blend-overlay after:content-['']"
 						)}
 					></div>

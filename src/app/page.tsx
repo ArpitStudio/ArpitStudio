@@ -8,7 +8,7 @@ import {
 	ImPhone,
 	ImWhatsapp
 } from 'react-icons/im';
-
+import logo from "./logo.png";
 type TLink = {
 	label: string;
 	href: string;
@@ -68,7 +68,7 @@ export default function Home() {
 			<div className="flex flex-col items-center gap-4">
 				<div>
 					<Image
-						src="/logo.png"
+						src={logo}
 						alt="logo"
 						width={120}
 						height={120}
